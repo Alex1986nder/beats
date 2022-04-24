@@ -1,0 +1,18 @@
+$red: #E01F3D;
+$gray:#666666;
+.button {
+  background-color: $red;
+  padding: 18px 41px;
+  display: inline-flex;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $gray;
+  }
+
+}

@@ -1,0 +1,25 @@
+// секция футер
+
+.footer {
+  display: flex;
+  flex: 0 0 auto;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  background-color: #fff;
+  
+}
+.contacts__footer {
+  display: flex;
+}
+
+.contacts__block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contacts__address {
+  font-size: 18px;
+  display: flex;
+}
+

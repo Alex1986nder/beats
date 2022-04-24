@@ -1,0 +1,56 @@
+.preview {
+  padding-bottom: 59px;
+
+}
+
+.preview__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview__text {
+  text-transform: uppercase;
+  display: flex;
+  max-width: 400px;
+  font-size: 48px;
+  margin-bottom: 17px;
+
+}
+
+.preview__desc {
+  display: flex;
+  max-width: 332px;
+  font-size: 21px;
+  margin-bottom: 36px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.preview__button {
+  margin-bottom: 70px;
+}
+
+.desc__menu {
+  display: flex;
+  column-gap: 25px;
+
+}
+
+.desc__item {
+  display: flex;
+  text-align: start;
+  max-width: 150px;
+  gap: 12px;
+}
+
+.desc__item--one::before {
+  content: url(../img/icon/Listening.png);
+
+}
+
+.desc__item--two::before {
+  content: url(../img/icon/charging.png);
+}
+
+.desc__item--three::before {
+  content: url(../img/icon/plug.png);
+}

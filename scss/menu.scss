@@ -1,0 +1,24 @@
+.menu {
+  display: flex;
+  flex: 1;
+
+}
+
+.menu__link {
+  font-size: 18px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.menu__list {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  max-width: 643px;
+  width: 100%;
+  column-gap: 28px;
+}
+
+.menu__item {
+  display: flex;
+}

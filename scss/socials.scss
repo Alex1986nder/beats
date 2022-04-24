@@ -1,0 +1,30 @@
+// секция иконок соцсетей
+
+
+.social {
+  display: flex;
+  max-width: 174px;
+  flex: 1;
+  column-gap: 10px;
+}
+
+.social__class {
+  display: flex;
+  flex: 1;
+}
+
+.social__icon {
+  flex: 1;
+  width: 30px;
+  height: 30px;
+  transition: .5s;
+  border-radius: 50%;
+  fill: #CDD1D2;
+
+}
+
+
+.social__icon:hover {
+  fill: #000;
+  transition: .5s;
+}
