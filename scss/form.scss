@@ -12,13 +12,10 @@
 }
 
 .form__head {
+  @include font_head;
+  @include flex;
   margin-bottom: 57px;
   color: #fff;
-  font-size: 48px;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
 }
 
 .form__text {
@@ -30,8 +27,7 @@
 
 .form__item {
   flex: 1;
-  display: flex;
-  flex-direction: column;
+  @include flex_column;
   gap: 11px;
   color: #FFFFFF;
 }
@@ -70,10 +66,9 @@
 }
 
 .form__label {
-  display: flex;
+  @include flex_column;
   flex: 1;
   color: #fff;
-  flex-direction: column;
   gap: 6px;
 
 }
@@ -106,7 +101,7 @@
 
 }
 
-.form__radio:checked~.form__radio-check {
+.form__radio:checked ~.form__radio-check {
   background-color: #E01F3D;
   border: 6px solid;
 }
@@ -118,18 +113,14 @@
   border-radius: 50%;
   cursor: pointer;
 
-
-
 }
 
 
 .form__checkbox {
-  display: flex;
   display: none;
-  cursor: pointer;
   margin-bottom: 46px;
 
-  &:checked~.form__check {
+  &:checked ~.form__check {
     background: url(../img/icon/галочка.png) center center no-repeat, #FFFFFF;
 
   }
@@ -147,19 +138,17 @@
 }
 
 .form__option {
-  display: flex;
+  @include flex_center; 
   margin-bottom: 9px;
   column-gap: 10px;
-  align-items: center;
-
 
 }
 
 .form__option-check {
-  display: flex;
+  @include flex_center; 
   column-gap: 10px;
   margin-bottom: 34px;
-  align-items: center;
+  
 }
 
 

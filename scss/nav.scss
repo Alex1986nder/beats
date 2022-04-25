@@ -11,11 +11,8 @@
 }
 
 .nav-menu__list {
-  display: flex;
-  flex-direction: column;
-
+  @include flex_column;
   align-items: center;
-
 
 }
 
@@ -32,25 +29,18 @@
 }
 
 .nav-menu__item--activ {
-  border: 1px solid #E01F3D;
-  border-radius: 50%;
-  width: 17px;
-  height: 17px;
+  @include circle_activ;
   // background: url(../img/icon/Ellipse.png) center center no-repeat;
   opacity: 1;
   background-color: transparent;
-  display: flex;
+  @include flex;
   align-items: center;
-  justify-content: center;
   margin: 1px;
 
   &::before {
     content: '';
-    border: 1px solid #E01F3D;
-    border-radius: 50%;
-    width: 4px;
-    height: 4px;
-    background-color: #E01F3D;
+    @include circle_activ (4px, 4px);
+    background-color: $red;
     // transform: translate(75%, 75%);
     // margin: auto;
 

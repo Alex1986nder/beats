@@ -4,8 +4,8 @@
 }
 
 .preview__block {
-  display: flex;
-  flex-direction: column;
+  @include flex_column;
+
 }
 
 .preview__text {
@@ -37,7 +37,6 @@
 
 .desc__item {
   display: flex;
-  text-align: start;
   max-width: 150px;
   gap: 12px;
 }

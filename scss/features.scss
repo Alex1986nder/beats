@@ -1,7 +1,4 @@
-$Whitesmoke: #F5F5F5;
-$black: #292929;
-$red: #E01F3D;
-$gray:#666666;
+
 //секция почему
 
 .features {
@@ -11,34 +8,28 @@ $gray:#666666;
 }
 
 .features__block {
-  display: flex;
-  flex-direction: column;
+  @include flex_column;
   align-items: center;
   margin-bottom: 59px;
 }
 
 .features__head {
-  text-transform: uppercase;
-  font-size: 48px;
-  font-weight: bold;
+  @include font_head;
   margin-bottom: 18px;
 }
 
 .features__desc {
   font-size: 16px;
-  text-align: center;
+  @include flex_center;
   color: $gray;
-  display: flex;
   max-width: 590px;
   
 }
 
 .features__list {
-  display: flex;
+  @include flex;
   column-gap: 19px;
-  justify-content: center;
-
-
+  
 }
 
 .features__items {
@@ -52,15 +43,13 @@ $gray:#666666;
 }
 
 .features__item {
-  display: flex;
-  flex-direction: column;
+  @include flex_column;
   max-width: 276px;
   align-items: center;
 
   &::before {
     content: url(../img/pic/battory.png);
-    background-color: #F2F5F4;
-    border-radius: 50%;
+    @include features__item;
     padding: 34px 48px;
     margin-bottom: 24px;
 
@@ -71,8 +60,7 @@ $gray:#666666;
 .features__item--icon-sound {
   &::before {
     content: url(../img/pic/sound.png);
-    background-color: #F2F5F4;
-    border-radius: 50%;
+    @include features__item;
     padding: 38px 38px;
     margin-bottom: 24px;
   }
@@ -81,8 +69,7 @@ $gray:#666666;
 .features__item--icon-time {
   &::before {
     content: url(../img/pic/time.png);
-    background-color: #F2F5F4;
-    border-radius: 50%;
+    @include features__item;
     padding: 34px 34px;
     margin-bottom: 24px;
   }
