@@ -3,12 +3,12 @@
 
 .form {
   background-color: #181818;
-  padding-top: 66px;
-  padding-bottom: 85px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  
+}
 
+.form__container{
+  flex: 1;
+ 
 }
 
 .form__head {
@@ -22,20 +22,22 @@
   display: flex;
   column-gap: 27px;
   justify-content: space-between;
+  width: 100%;
 
 }
 
-.form__item {
+.form__list {
   flex: 1;
   @include flex_column;
   gap: 11px;
   color: #FFFFFF;
+  
 }
 
-.form__list {
+.form__item {
   display: flex;
   column-gap: 14px;
-
+  
 
 }
 

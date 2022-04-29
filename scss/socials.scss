@@ -1,11 +1,13 @@
 // секция иконок соцсетей
 
-
+.socials {
+  display: flex;
+}
 .social {
   display: flex;
   max-width: 174px;
-  flex: 1;
   column-gap: 10px;
+  
 }
 
 .social__class {

@@ -1,12 +1,12 @@
-.contacts__fone {
-  @include flex_center; 
+.contacts {
+  @include flex_center;
   font-size: 18px;
   column-gap: 6px;
-  
-  
-  &::before {
-    content: url(../img/icon/tel.png);
-    display: flex;
-    
-  }
+
+}
+
+.contacts__icon {
+  width: 13px;
+  height: 13px;
+  // fill: red;
 }

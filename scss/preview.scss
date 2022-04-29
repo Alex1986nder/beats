@@ -1,12 +1,19 @@
 .preview {
   padding-bottom: 59px;
+  padding-top: 24px;
+  background-color:  $Whitesmoke;
+}
+.preview__container {
+  background: url(../img/pic/Ellipse.png) center right  no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  flex: 1;
+
 
 }
 
-.preview__block {
-  @include flex_column;
-
-}
 
 .preview__text {
   text-transform: uppercase;
@@ -25,9 +32,12 @@
   font-family: 'Alegreya Sans', sans-serif;
 }
 
-.preview__button {
-  margin-bottom: 70px;
+.desc__icon {
+  width: 40px;
+  height: 40px;
+  fill: #000000;
 }
+
 
 .desc__menu {
   display: flex;
@@ -41,15 +51,15 @@
   gap: 12px;
 }
 
-.desc__item--one::before {
-  content: url(../img/icon/Listening.png);
+// .desc__item--one::before {
+//   content: url(../img/icon/Listening.png);
 
-}
+// }
 
-.desc__item--two::before {
-  content: url(../img/icon/charging.png);
-}
+// .desc__item--two::before {
+//   content: url(../img/icon/charging.png);
+// }
 
-.desc__item--three::before {
-  content: url(../img/icon/plug.png);
-}
+// .desc__item--three::before {
+//   content: url(../img/icon/plug.png);
+// }

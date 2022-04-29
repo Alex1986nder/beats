@@ -3,9 +3,10 @@
 
 .nav-menu {
   display: flex;
-  position: absolute;
-  top: 242px;
-  right: 44px;
+  position: fixed;
+  top: 319px;
+  right: 100px;
+  z-index: auto;
 
 
 }

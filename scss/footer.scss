@@ -2,23 +2,33 @@
 
 .footer {
   display: flex;
-  flex: 0 0 auto;
   padding-top: 20px;
   padding-bottom: 18px;
   background-color: #fff;
-  
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
 }
+
+.footer__container {
+  flex: 1;
+
+}
+
 .contacts__footer {
   display: flex;
+  flex: 1;
 }
 
 .contacts__block {
   @include flex_column;
   flex: 1;
+
 }
 
 .contacts__address {
   font-size: 18px;
   display: flex;
 }
-

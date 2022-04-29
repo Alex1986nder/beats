@@ -1,10 +1,8 @@
-
 //секция почему
 
 .features {
   background-color: #fff;
-  padding-top: 101px;
-  padding-bottom: 98px;
+
 }
 
 .features__block {
@@ -18,18 +16,25 @@
   margin-bottom: 18px;
 }
 
+.features__text-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .features__desc {
   font-size: 16px;
-  @include flex_center;
   color: $gray;
   max-width: 590px;
-  
+  text-align: center;
+  margin: 0 auto;
+
+
 }
 
 .features__list {
   @include flex;
   column-gap: 19px;
-  
+
 }
 
 .features__items {
@@ -40,46 +45,51 @@
     padding-top: 58px;
   }
 
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+
 }
 
 .features__item {
   @include flex_column;
   max-width: 276px;
   align-items: center;
+  
+}
 
-  &::before {
-    content: url(../img/pic/battory.png);
-    @include features__item;
-    padding: 34px 48px;
-    margin-bottom: 24px;
+.features__icon {
+  // align-items: center;
+  @include features__item;
+  margin-bottom: 24px;
+  width: 128px;
+  height: 128px;
 
-  }
+
+
+}
+.features__icon--batory {
+padding: 29px 30px;
 
 }
 
-.features__item--icon-sound {
-  &::before {
-    content: url(../img/pic/sound.png);
-    @include features__item;
-    padding: 38px 38px;
-    margin-bottom: 24px;
-  }
+.features__icon--sound {
+  padding: 30px 26px;
+
 }
 
-.features__item--icon-time {
-  &::before {
-    content: url(../img/pic/time.png);
-    @include features__item;
-    padding: 34px 34px;
-    margin-bottom: 24px;
-  }
+.features__icon--time {
+  padding: 26px 31px;
+
 }
 
 .features__title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 7px;
-  display: flex;
+  align-items: center;
 }
 
 
