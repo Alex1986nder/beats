@@ -37,11 +37,9 @@
   }
 
   .preview__text {
-    max-width: 27.68rem;
-    font-size: 2rem;
+    max-width: rem(619px);
+    font-size: 3rem;
     
-    
-
   }
 
 
@@ -144,6 +142,7 @@
 
   .preview__text {
     max-width: rem(371px);
+    font-size: 2rem;
 
   }
 
@@ -186,6 +185,10 @@
   .features__icon {
     margin-bottom: 0;
 
+  }
+
+  .reviews__head {
+    font-size: 2rem;
   }
 
   .form__head {

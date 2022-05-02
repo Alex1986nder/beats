@@ -836,8 +836,8 @@ ul li {
   }
 
   .preview__text {
-    max-width: 27.68rem;
-    font-size: 2rem;
+    max-width: 38.6875rem;
+    font-size: 3rem;
   }
 
   .menu,
@@ -943,6 +943,7 @@ ul li {
 
   .preview__text {
     max-width: 23.1875rem;
+    font-size: 2rem;
   }
 
   .preview__block {
@@ -991,6 +992,10 @@ ul li {
 
   .features__icon {
     margin-bottom: 0;
+  }
+
+  .reviews__head {
+    font-size: 2rem;
   }
 
   .form__head {
