@@ -922,6 +922,11 @@ ul li {
   .form__comments {
     min-height: 5.125rem;
   }
+
+  .contacts__box {
+    fill: #E01F3D;
+    color: #E01F3D;
+  }
 }
 @media (max-width: 480px) {
   html {
@@ -999,6 +1004,11 @@ ul li {
   .contacts__block {
     text-align: center;
     gap: 0.94rem;
+  }
+
+  .contacts__box {
+    fill: #292929;
+    color: #292929;
   }
 }
 /*# sourceMappingURL=main.css.map */
