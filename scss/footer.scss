@@ -2,8 +2,8 @@
 
 .footer {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 18px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.13rem;
   background-color: #fff;
   position: absolute;
   left: 0;
@@ -12,10 +12,6 @@
   width: 100%;
 }
 
-.footer__container {
-  flex: 1;
-
-}
 
 .contacts__footer {
   display: flex;
@@ -29,6 +25,6 @@
 }
 
 .contacts__address {
-  font-size: 18px;
+  font-size: 1.13rem;
   display: flex;
 }

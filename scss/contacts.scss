@@ -1,12 +1,12 @@
 .contacts {
   @include flex_center;
-  font-size: 18px;
-  column-gap: 6px;
+  font-size: 1.13rem;
+  column-gap: 0.38rem;
 
 }
 
 .contacts__icon {
-  width: 13px;
-  height: 13px;
+  max-width: rem(13px);
+  max-height: rem(13px);
   // fill: red;
 }

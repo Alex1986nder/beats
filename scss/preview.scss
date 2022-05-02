@@ -1,7 +1,8 @@
 .preview {
-  padding-bottom: 59px;
-  padding-top: 24px;
+  padding-bottom: 3.69rem;
+  padding-top: 1.5rem;
   background-color:  $Whitesmoke;
+  
 }
 .preview__container {
   background: url(../img/pic/Ellipse.png) center right  no-repeat;
@@ -9,7 +10,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  flex: 1;
+  // flex: 1;
 
 
 }
@@ -18,37 +19,37 @@
 .preview__text {
   text-transform: uppercase;
   display: flex;
-  max-width: 400px;
-  font-size: 48px;
-  margin-bottom: 17px;
+  max-width: rem(400px);
+  font-size: 3rem;
+  margin-bottom: 1rem;
 
 }
 
 .preview__desc {
   display: flex;
-  max-width: 332px;
-  font-size: 21px;
-  margin-bottom: 36px;
+  max-width: rem(332px);
+  font-size: 1.31rem;
+  margin-bottom: 2.25rem;
   font-family: 'Alegreya Sans', sans-serif;
 }
 
 .desc__icon {
-  width: 40px;
-  height: 40px;
+  width: rem(40px);
+  height: rem(40px);
   fill: #000000;
 }
 
 
 .desc__menu {
   display: flex;
-  column-gap: 25px;
+  column-gap: 1.57rem;
 
 }
 
 .desc__item {
   display: flex;
-  max-width: 150px;
-  gap: 12px;
+  max-width: rem(150px);
+  gap: 0.75rem;
 }
 
 // .desc__item--one::before {

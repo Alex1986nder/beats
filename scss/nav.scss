@@ -4,8 +4,8 @@
 .nav-menu {
   display: flex;
   position: fixed;
-  top: 319px;
-  right: 100px;
+  top: rem(319px);
+  right: rem(100px);
   z-index: auto;
 
 
@@ -20,12 +20,12 @@
 .nav-menu__item {
   background-color: #292929;
   border-radius: 50%;
-  width: 5px;
-  height: 5px;
+  width: rem(5px);
+  height: rem(5px);
   opacity: 60%;
   display: flex;
   border: 1px solid #292929;
-  margin: 8px;
+  margin: 0.5rem;
 
 }
 
@@ -36,7 +36,6 @@
   background-color: transparent;
   @include flex;
   align-items: center;
-  margin: 1px;
 
   &::before {
     content: '';

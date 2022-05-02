@@ -5,8 +5,8 @@
 }
 .social {
   display: flex;
-  max-width: 174px;
-  column-gap: 10px;
+  max-width: rem(174px);
+  column-gap: 0.63rem;
   
 }
 
@@ -17,8 +17,8 @@
 
 .social__icon {
   flex: 1;
-  width: 30px;
-  height: 30px;
+  max-width: rem(30px);
+  max-height: rem(30px);
   transition: .5s;
   border-radius: 50%;
   fill: #B3B3B3;

@@ -3,6 +3,12 @@ $black: #292929;
 $red: #E01F3D;
 $gray:#666666;
 
+@function rem($px) {
+  @return $px / 16px + 0rem;
+
+}
+  
+
 @mixin flex {
   display: flex;
   justify-content: center;
@@ -19,7 +25,7 @@ $gray:#666666;
 }
 
 @mixin font_head {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -41,6 +47,8 @@ $gray:#666666;
   height: $height;
 }
 
+
+
 @import "base.scss";
 @import "button.scss";
 @import "contacts.scss";
@@ -54,3 +62,6 @@ $gray:#666666;
 @import "socials.scss";
 @import "map.scss";
 @import "footer.scss";
+@import "media.scss";
+
+

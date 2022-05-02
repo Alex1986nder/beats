@@ -6,21 +6,18 @@
   
 }
 
-.form__container{
-  flex: 1;
- 
-}
+
 
 .form__head {
   @include font_head;
   @include flex;
-  margin-bottom: 57px;
+  margin-bottom: rem(57px);
   color: #fff;
 }
 
 .form__text {
   display: flex;
-  column-gap: 27px;
+  column-gap: rem(27px);
   justify-content: space-between;
   width: 100%;
 
@@ -29,22 +26,22 @@
 .form__list {
   flex: 1;
   @include flex_column;
-  gap: 11px;
+  gap: 0.69rem;
   color: #FFFFFF;
   
 }
 
 .form__item {
   display: flex;
-  column-gap: 14px;
+  column-gap: 0.88rem;
   
 
 }
 
 .form__input {
   color: #000;
-  padding: 18px 12px;
-  font-size: 14px;
+  padding: 1.13rem 0.75rem;
+  font-size: 0.88rem;
   border-radius: 4px;
   display: flex;
   flex: 1;
@@ -62,7 +59,7 @@
 }
 
 .form__input--h {
-  width: 105px;
+  width: 100%;
   flex: 1;
   display: flex;
 }
@@ -71,23 +68,25 @@
   @include flex_column;
   flex: 1;
   color: #fff;
-  gap: 6px;
+  gap: 0.38rem;
 
 }
 
 .form__comments {
   resize: none;
   color: #000;
-  padding: 18px 12px;
+  padding: 1.13px 0.13rem;
   display: flex;
-  max-width: 450px;
+  // max-width: 450px;
   width: 100%;
-  min-height: 152px;
+  min-height: 17vh;
+  // min-height: 152px;
+  // height: 100%;
   border-radius: 4px;
   border: 3px solid transparent;
   outline: none;
   flex: 1;
-  margin-bottom: 28px;
+  margin-bottom: rem(28px);
 
   &:focus {
     border: 3px solid #E01F3D;
@@ -110,8 +109,8 @@
 
 .form__radio-check {
   background-color: #FFFFFF;
-  width: 25px;
-  height: 25px;
+  width: rem(25px);
+  height: rem(25px);
   border-radius: 50%;
   cursor: pointer;
 
@@ -120,7 +119,7 @@
 
 .form__checkbox {
   display: none;
-  margin-bottom: 46px;
+  margin-bottom: 2.88rem;
 
   &:checked ~.form__check {
     background: url(../img/icon/галочка.png) center center no-repeat, #FFFFFF;
@@ -132,8 +131,8 @@
 .form__check {
   background-color: #FFFFFF;
   cursor: pointer;
-  width: 24px;
-  height: 24px;
+  width: rem(24px);
+  height: rem(24px);
   border-radius: 4px;
   display: flex;
 
@@ -141,15 +140,15 @@
 
 .form__option {
   @include flex_center; 
-  margin-bottom: 9px;
-  column-gap: 10px;
+  margin-bottom: 0.63rem;
+  column-gap: 0.63rem;
 
 }
 
 .form__option-check {
   @include flex_center; 
-  column-gap: 10px;
-  margin-bottom: 34px;
+  column-gap: 0.63rem;
+  margin-bottom: 2.13rem;
   
 }
 
@@ -160,7 +159,7 @@
   background-color: transparent;
   text-transform: none;
   font-weight: 400;
-  padding: 18px 15px;
+  padding: 1.13rem 1rem;
 
   &:hover {
     background-color: transparent;

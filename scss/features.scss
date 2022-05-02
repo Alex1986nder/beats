@@ -5,26 +5,29 @@
 
 }
 
+
+
 .features__block {
   @include flex_column;
   align-items: center;
-  margin-bottom: 59px;
+  margin-bottom: 3.69rem;
 }
 
 .features__head {
   @include font_head;
-  margin-bottom: 18px;
+  margin-bottom: 1.13rem;
 }
 
 .features__text-content {
   text-align: center;
   margin: 0 auto;
+  
 }
 
 .features__desc {
-  font-size: 16px;
+  font-size: 1rem;
   color: $gray;
-  max-width: 590px;
+  max-width: rem(590px);
   text-align: center;
   margin: 0 auto;
 
@@ -33,16 +36,19 @@
 
 .features__list {
   @include flex;
-  column-gap: 19px;
+  column-gap: 1.19rem;
+  
 
 }
 
 .features__items {
   display: flex;
 
+
+
   &::after {
     content: url(../img/pic/пробел.png);
-    padding-top: 58px;
+    padding-top: 3.63rem;
   }
 
   &:last-child {
@@ -55,46 +61,46 @@
 
 .features__item {
   @include flex_column;
-  max-width: 276px;
   align-items: center;
-  
+
+
 }
 
 .features__icon {
-  // align-items: center;
   @include features__item;
-  margin-bottom: 24px;
-  width: 128px;
-  height: 128px;
+  margin-bottom: 1.5rem;
+  max-width: rem(128px);
+  max-height: rem(128px);
 
 
 
 }
+
 .features__icon--batory {
-padding: 29px 30px;
+  padding: 1.83rem;
 
 }
 
 .features__icon--sound {
-  padding: 30px 26px;
+  padding: 1.8rem 1.9rem;
 
 }
 
 .features__icon--time {
-  padding: 26px 31px;
+  padding: 1.63rem;
 
 }
 
 .features__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 7px;
-  align-items: center;
+  margin-bottom: 0.44rem;
+
 }
 
 
 .features__text {
-  text-align: center;
   color: $gray;
-  width: 247px;
+  display: flex;
+
 }
