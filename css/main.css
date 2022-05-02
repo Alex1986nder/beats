@@ -307,6 +307,7 @@ ul li {
           flex: 1;
   outline: none;
   border: 3px solid transparent;
+  width: 100%;
 }
 .form__input:focus {
   border: 3px solid #E01F3D;
@@ -939,6 +940,7 @@ ul li {
 
   .features__head {
     font-size: 2rem;
+    text-align: center;
   }
 
   .features__list {
@@ -988,6 +990,8 @@ ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .contacts__footer {
