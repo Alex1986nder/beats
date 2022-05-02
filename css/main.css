@@ -836,9 +836,8 @@ ul li {
   }
 
   .preview__text {
-    max-width: 38.6875rem;
+    max-width: 27.68rem;
     font-size: 2rem;
-    max-width: 23.1875rem;
   }
 
   .menu,
@@ -861,6 +860,10 @@ ul li {
 
   .gamburger__pic {
     display: block;
+  }
+
+  .features__head {
+    text-align: center;
   }
 
   .features__items {
@@ -895,6 +898,10 @@ ul li {
     display: flex;
     height: 100%;
     padding: 0;
+  }
+
+  .form__head {
+    text-align: center;
   }
 
   .form__text {
@@ -932,6 +939,10 @@ ul li {
 @media (max-width: 480px) {
   html {
     font-size: 14px;
+  }
+
+  .preview__text {
+    max-width: 23.1875rem;
   }
 
   .preview__block {
@@ -984,6 +995,11 @@ ul li {
 
   .form__head {
     font-size: 2rem;
+    text-align: center;
+  }
+
+  .form__text {
+    row-gap: 1rem;
   }
 
   .form__item {

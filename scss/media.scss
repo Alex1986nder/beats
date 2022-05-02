@@ -37,9 +37,10 @@
   }
 
   .preview__text {
-    max-width: rem(619px);
+    max-width: 27.68rem;
     font-size: 2rem;
-    max-width: rem(371px);
+    
+    
 
   }
 
@@ -60,6 +61,10 @@
   .gamburger__pic {
     display: block;
 
+  }
+
+  .features__head {
+    text-align: center;
   }
 
   .features__items {
@@ -89,6 +94,10 @@
     display: flex;
     height: 100%;
     padding: 0;
+  }
+
+  .form__head {
+    text-align: center;
   }
 
   .form__text {
@@ -133,6 +142,11 @@
     font-size: 14px;
   }
 
+  .preview__text {
+    max-width: rem(371px);
+
+  }
+
 
   .preview__block {
     margin-bottom: 4.5rem;
@@ -165,7 +179,7 @@
   }
 
   .features__text-content {
-    text-align: left
+    text-align: left;
   }
 
 
@@ -176,14 +190,21 @@
 
   .form__head {
     font-size: 2rem;
+    text-align: center;
 
+  }
+
+  .form__text {
+    row-gap: rem(16px);
   }
 
   .form__item {
     justify-content: center;
     flex-wrap: wrap;
+    
   }
 
+  
 
   .contacts__footer {
     flex-direction: column;
