@@ -3,7 +3,6 @@
 .socials {
   display: flex;
   transform: translateX(20px);
-  margin-right: rem(10px);
 
   @include tablet {
     transform: none;
