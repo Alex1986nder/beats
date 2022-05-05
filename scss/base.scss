@@ -1,5 +1,9 @@
 html {
   font-size: 16px;
+
+  @include tel {
+    font-size: 3.33333vmin;
+  }
 }
 
 html,
@@ -16,11 +20,13 @@ h4,
 h5,
 h6 {
   @include indents;
+
 }
 
 * {
   @include indents;
   box-sizing: border-box;
+
 }
 
 body {
@@ -58,6 +64,7 @@ body {
   flex-wrap: wrap;
   margin-right: 2.38rem;
   justify-content: center;
+
 }
 
 a,
@@ -76,16 +83,16 @@ ul li {
 
 .img {
   max-width: 100%;
+
 }
 
 
 
 .container {
-  
-  max-width: rem(960px);
+  max-width: 940px;
   margin: 0 auto;
   width: 95%;
-  // padding-left: 10px;
-  // padding-right: rem(10px);
+  position: relative;
   
 }
+

@@ -6,7 +6,15 @@
 .header {
   @include flex_center;
   margin-bottom: 5.38rem;
+  padding-right: rem(24px);
 
+  @include tablet {
+    margin-bottom: 1.38rem;
+  }
+
+  @include tel {
+    padding-right: 0;
+  }
 }
 
 .gamburger__pic {

@@ -2,10 +2,13 @@
   display: flex;
   flex: 1;
 
+  @include tablet {
+    display: none;
+  }
 }
 
 .menu__link {
-  font-size: 1,13rem;
+  font-size: 1.13rem;
   font-family: 'Alegreya Sans', sans-serif;
 }
 

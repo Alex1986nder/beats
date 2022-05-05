@@ -1,0 +1,16 @@
+.gamburger {
+
+  @include tablet {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+  }
+  
+}
+
+.gamburger__pic {
+  
+  @include tablet {
+    display: block;
+  }
+}

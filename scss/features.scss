@@ -2,26 +2,77 @@
 
 .features {
   background-color: #fff;
+  position: relative;
+
+  @include tablet {
+    &::before {
+      left: 6%;
+    }
+  }
+
+  &::before {
+    content: url(../img/icon/треугольник.png);
+    position: absolute;
+    bottom: rem(-18px);
+    left: 10%;
+  }
+
+  &::after {
+    content: url(../img/icon/наклонная.png);
+    position: absolute;
+    top: rem(-18px);
+    right: 10%;
+  }
 
 }
 
+.features__container {
+  @include tablet { 
+    width: 99%;
+  }
 
+  @include tel {
+    width: 95%
+  }
+} 
 
 .features__block {
   @include flex_column;
   align-items: center;
   margin-bottom: 3.69rem;
-}
+
+  @include tablet { 
+    margin-bottom: rem(51px);
+  }
+
+  @include tel {
+    margin-bottom: rem(49px);
+  }
+} 
+
 
 .features__head {
   @include font_head;
   margin-bottom: 1.13rem;
+
+  @include tablet { 
+    text-align: center;
+    margin-bottom: rem(10px);
+
+  }
+
+  @include tel {
+    font-size: 2rem;
+    text-align: center;
+  }
+
 }
+
 
 .features__text-content {
   text-align: center;
   margin: 0 auto;
-  
+
 }
 
 .features__desc {
@@ -31,24 +82,49 @@
   text-align: center;
   margin: 0 auto;
 
-
 }
 
 .features__list {
   @include flex;
-  column-gap: 1.19rem;
-  
+  column-gap: rem(58px);
+
+  @include tablet { 
+    column-gap: rem(6px);
+    
+  }
+
+  @include tel {
+    flex-direction: column;
+    gap: 38px;
+  }
+
 
 }
 
 .features__items {
   display: flex;
+  flex: 1;
+  position: relative;
 
+  @include tablet { 
+    display: flex;
 
+    &::after {
+      display: none;
+    }
+    
+  }
+
+  @include tel {
+    align-items: center;
+    flex-direction: row;
+  }
 
   &::after {
     content: url(../img/pic/пробел.png);
     padding-top: 3.63rem;
+    position: absolute; 
+    left: 100%
   }
 
   &:last-child {
@@ -63,6 +139,21 @@
   @include flex_column;
   align-items: center;
 
+  @include tablet { 
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    
+  }
+
+  @include tel {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.75rem;
+
+  }
 
 }
 
@@ -72,7 +163,9 @@
   max-width: rem(128px);
   max-height: rem(128px);
 
-
+  @include tel {
+    margin-bottom: 0;
+  }
 
 }
 
@@ -91,13 +184,29 @@
 
 }
 
+.features__text-content {
+
+  @include tel {
+    text-align: left;
+  }
+  
+}
+
 .features__title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.44rem;
 
-}
+  @include tablet { 
+    margin-bottom: rem(20px);
+    
+  }
 
+  @include tel {
+    margin-bottom: rem(3px);
+  }
+
+}
 
 .features__text {
   color: $gray;

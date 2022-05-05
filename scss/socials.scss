@@ -2,12 +2,27 @@
 
 .socials {
   display: flex;
+  transform: translateX(20px);
+
+  @include tablet {
+    transform: translateX(-33px)
+  }
+
+  @include tel {
+    transform: none;
+  }
+
 }
+
 .social {
   display: flex;
   max-width: rem(174px);
   column-gap: 0.63rem;
-  
+
+  @include tel {
+    column-gap: rem(14px);
+  }
+
 }
 
 .social__class {
@@ -23,10 +38,21 @@
   border-radius: 50%;
   fill: #B3B3B3;
 
+  @include tel {
+    max-width: rem(24px);
+    max-height: rem(24px);
+  }
+
+  &:hover {
+    fill: #000;
+    transition: .5s;
+  }
+
 }
 
+.socials__block {
+  @include tel {
+    column-gap: rem(14px);
+  }
 
-.social__icon:hover {
-  fill: #000;
-  transition: .5s;
 }

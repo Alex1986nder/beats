@@ -10,21 +10,5 @@
   right: 0;
   bottom: 0;
   width: 100%;
-}
 
-
-.contacts__footer {
-  display: flex;
-  flex: 1;
-}
-
-.contacts__block {
-  @include flex_column;
-  flex: 1;
-
-}
-
-.contacts__address {
-  font-size: 1.13rem;
-  display: flex;
 }

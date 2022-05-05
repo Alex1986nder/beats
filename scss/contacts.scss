@@ -5,9 +5,70 @@
 
 }
 
+.contacts__header {
+  @include tablet {
+    display: none;
+  }
+  
+}
+
 .contacts__icon {
   max-width: rem(13px);
   max-height: rem(13px);
   // fill: red;
+
+}
+
+.contacts__footer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+
+  @include tel {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.94rem;
+  }
+
+}
+
+.contacts__block {
+  @include flex_column;
+  flex: 1;
+
+  @include tel {
+    text-align: center;
+    gap: 0.94rem;
+  }
+
+}
+
+.contacts__address {
+  font-size: 1.13rem;
+  display: flex;
+  line-height: rem(24px);
+
+  @include tablet {
+    font-size: rem(21px);
+  }
+
+  @include tel {
+    font-size: rem(18px);
+  }
+}
+
+.contacts__box {
+  line-height: rem(21px);
+
+  @include tablet {
+    fill: $red;
+    color: $red;
+  }
+
+  @include tel {
+    fill: #292929;
+    color: #292929;
+    font-size: rem(16px);
+  }
 }
 

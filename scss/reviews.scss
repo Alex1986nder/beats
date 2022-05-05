@@ -1,12 +1,20 @@
 .reviews {
   background-color: #FFFFFF;
-  // padding: 68px 79px 63px;
 }
 
 .reviews__head {
   @include flex;
   @include font_head;
   margin-bottom: 2rem;
+
+  @include tablet {
+    margin-bottom: rem(44px);
+  }
+
+  @include tel {
+    font-size: 2rem;
+    margin-bottom: rem(39px);
+  }
 
 }
 
@@ -37,18 +45,75 @@
   padding: 2.5rem;
   background-color: #F8FAF9;
 
+  @include tablet {
+    margin-bottom: rem(27px);
+  }
+
+  @include tel {
+    margin-bottom: rem(34px);
+  }
 
 }
 
-.reviews__head-review {
+.reviews__desc {
   padding-top: 2rem;
+
+  @include tablet {
+    margin-bottom: rem(36px);
+  }
+
+  @include tel {
+    padding-top: rem(23px);
+  }
+}
+
+
+.reviews__foto {
+  @include tablet {
+    width: rem(130px);
+    height: rem(130px);
+  }
+}
+
+
+.reviews__head-review {
+
   margin-bottom: 1.69rem;
+  font-size: rem(24px);
+
+  @include tablet {
+    margin-bottom: rem(15px);
+  }
+
+  @include tel {
+    margin-bottom: rem(11px);
+  }
 }
 
 .reviews__text {
   margin-bottom: 2.63rem;
   color: $gray;
   padding-right: 6.5rem;
+  line-height: rem(19px);
+
+  @include tablet {
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin-bottom: rem(18px);
+  }
+
+  @include tel {
+    margin-bottom: rem(14px);
+  }
+}
+
+.reviews__name {
+  font-size: rem(18px);
+
+  @include tablet {
+    font-weight: 400; 
+  }
 }
 
 .reviews__list {
@@ -59,8 +124,20 @@
 .reviews__icon {
   border-radius: 50%;
   border: 6px solid transparent;
+  width: rem(74px);
+  height: rem(74px);
+
+  @include tel {
+    width: rem(76px);
+    height: rem(76px);
+  }
 
   &:hover {
     border: 6px solid #E01F3D;
   }
+
+  &--active {
+    border-color: #E01F3D;
+  }
+
 }
