@@ -1,3 +1,4 @@
+
 .gamburger {
 
   @include tablet {
@@ -9,7 +10,7 @@
 }
 
 .gamburger__pic {
-  
+  display: none;
   @include tablet {
     display: block;
   }

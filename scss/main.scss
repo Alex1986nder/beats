@@ -8,6 +8,10 @@ $gray:#666666;
 $tablet: 768px;
 $tel: 480px;
 
+@function rem($px) {
+  @return $px / 16px + 0rem;
+
+}
 
 @mixin flex {
   display: flex;
@@ -49,11 +53,25 @@ $tel: 480px;
 
 
 
-@import "media.scss";
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+      @content;
+  }
+}
+
+@mixin tel {
+  @media (max-width: $tel) {
+      @content;
+  }
+}
 
 
+
+// @import "media.scss";
+
+@import "gamburger.scss";
 @import "base.scss";
-
 @import "button.scss";
 @import "contacts.scss";
 @import "features.scss";
