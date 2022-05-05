@@ -3,17 +3,11 @@ $black: #292929;
 $red: #E01F3D;
 $gray:#666666;
 
-
 //breakpoints
 
 $tablet: 768px;
 $tel: 480px;
 
-@function rem($px) {
-  @return $px / 16px + 0rem;
-
-}
-  
 
 @mixin flex {
   display: flex;
@@ -51,12 +45,15 @@ $tel: 480px;
   border-radius: 50%;
   width: $width;
   height: $height;
-  // background-color: #E01F3D
 }
 
 
 
+@import "media.scss";
+
+
 @import "base.scss";
+
 @import "button.scss";
 @import "contacts.scss";
 @import "features.scss";
@@ -69,6 +66,15 @@ $tel: 480px;
 @import "socials.scss";
 @import "map.scss";
 @import "footer.scss";
-@import "media.scss";
+
+
+  
+
+
+
+
+
+
+
 
 

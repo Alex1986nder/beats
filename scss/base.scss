@@ -10,8 +10,10 @@ html,
 body {
   height: 100%;
   @include indents;
+  // user-select: none;
 
 }
+
 
 h1,
 h2,

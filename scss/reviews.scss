@@ -46,20 +46,25 @@
   background-color: #F8FAF9;
 
   @include tablet {
-    margin-bottom: rem(27px);
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    text-align: center;
   }
 
   @include tel {
-    margin-bottom: rem(34px);
+    margin-bottom: rem(7px);
   }
 
 }
 
 .reviews__desc {
-  padding-top: 2rem;
+  padding-top: rem(25px);
 
   @include tablet {
-    margin-bottom: rem(36px);
+    margin-bottom: rem(28px);
+    padding-top: rem(36px);
   }
 
   @include tel {
@@ -73,6 +78,8 @@
     width: rem(130px);
     height: rem(130px);
   }
+
+
 }
 
 
@@ -112,12 +119,13 @@
   font-size: rem(18px);
 
   @include tablet {
-    font-weight: 400; 
+    font-weight: 400;
   }
 }
 
 .reviews__list {
   @include flex;
+  
 
 }
 
@@ -126,14 +134,16 @@
   border: 6px solid transparent;
   width: rem(74px);
   height: rem(74px);
+  box-sizing: content-box;
 
   @include tel {
-    width: rem(76px);
-    height: rem(76px);
+    width: rem(64px);
+    height: rem(64px);
   }
 
   &:hover {
     border: 6px solid #E01F3D;
+    
   }
 
   &--active {

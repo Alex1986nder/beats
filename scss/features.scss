@@ -73,7 +73,12 @@
   text-align: center;
   margin: 0 auto;
 
+  @include tel {
+    text-align: left;
+  }
+
 }
+
 
 .features__desc {
   font-size: 1rem;
@@ -184,13 +189,7 @@
 
 }
 
-.features__text-content {
 
-  @include tel {
-    text-align: left;
-  }
-  
-}
 
 .features__title {
   font-size: 1.5rem;

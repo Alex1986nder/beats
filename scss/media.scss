@@ -1,13 +1,20 @@
 
-@mixin tablet {
-  @media (max-width: $tablet) {
-    @content;
-  }
+@function rem($px) {
+  @return $px / 16px + 0rem;
+
 }
 
 @mixin tablet {
-  @media (max-width: $tel) {
-    @content;
+  @media (max-width: $tablet) {
+      @content;
   }
 }
+
+@mixin tel {
+  @media (max-width: $tel) {
+      @content;
+  }
+}
+
+
 
