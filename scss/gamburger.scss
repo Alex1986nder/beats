@@ -1,10 +1,11 @@
 
 .gamburger {
-
+  
   @include tablet {
     display: flex;
     flex: 1;
     justify-content: end;
+    
   }
   
 }
