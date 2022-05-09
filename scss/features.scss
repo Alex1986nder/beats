@@ -100,7 +100,7 @@
 
   @include tel {
     flex-direction: column;
-    gap: 38px;
+    gap: rem(38px);
   }
 
 
@@ -136,6 +136,7 @@
     &::after {
       display: none;
     }
+    
   }
 
 }

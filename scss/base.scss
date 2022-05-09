@@ -11,10 +11,16 @@ html,
 body {
   height: 100%;
   @include indents;
-
-
+  
 }
 
+body {
+  font-family: 'Play', Arial, sans-serif;
+  color: $black;
+  height: 100%;
+  position: relative;
+
+}
 
 h1,
 h2,
@@ -29,13 +35,6 @@ h6 {
 * {
   @include indents;
   box-sizing: border-box;
-
-}
-
-body {
-  font-family: 'Play', Arial, sans-serif;
-  color: $black;
-  height: 100%;
 
 }
 
@@ -88,8 +87,6 @@ ul li {
   max-width: 100%;
 
 }
-
-
 
 .container {
   max-width: 940px;

@@ -1,0 +1,173 @@
+.slider {
+  background-color: $Whitesmoke;
+  // position: relative;
+}
+
+
+.slider__container {
+  background: url(../img/pic/Ellipse__slider.png) center left 10% / 50% auto no-repeat;
+  background-size: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+  width: 95%;
+
+  @include tablet {
+    background: none;
+    align-items: center;
+  }
+
+}
+
+.slider__switch {
+  width: rem(24px);
+  height: rem(40px);
+  display: flex;
+  position: absolute;
+  top: 50%;
+
+  @include tablet {
+    top: 30%;
+    left: 80%;
+
+  }
+
+  @include tel {
+    top: 27%;
+    left: 95%;
+  }
+
+
+}
+
+.slider__switch--left {
+  transform: rotate(180deg);
+  left: 0;
+
+  @include tablet {
+    left: 15%;
+
+  }
+
+  @include tel {
+    left: 0;
+
+  }
+
+}
+
+.slider__link-switch {
+  display: block;
+  
+}
+
+.slider__block {
+
+  @include tablet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: rem(54px);
+    justify-content: center;
+    flex: 1;
+
+
+    &::before {
+      content: "";
+      margin-bottom: 4rem;
+      width: rem(323px);
+      height: rem(323px);
+      background: url(../img/pic/Ellipse__slider.png) center center / contain no-repeat;
+
+    }
+
+  }
+
+}
+
+.slider__text {
+  max-width: rem(419px);
+  text-transform: uppercase;
+  display: flex;
+  font-size: rem(36px);
+  margin-bottom: rem(24px);
+  line-height: rem(42px);
+
+  @include tablet {
+    max-width: rem(614px);
+    font-size: rem(28px);
+    line-height: rem(32px);
+  }
+
+  @include tel {
+    max-width: rem(416px);
+  }
+
+}
+
+.slider__desc {
+  max-width: rem(368px);
+  margin-bottom: rem(27px);
+
+  @include tablet {
+    max-width: rem(614px);
+
+  }
+
+  @include tel {
+    max-width: rem(412px);
+
+  }
+
+}
+
+
+.slider__feature {
+  display: flex;
+  margin-bottom: rem(24px);
+
+
+  @include tablet {
+    justify-content: center;
+
+  }
+
+
+}
+
+.slider__feature-list {
+  margin-right: rem(90px);
+  text-align: start;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+}
+
+.slider__box {
+  display: flex;
+  gap: rem(13px);
+  align-items: center;
+
+  @include tablet {
+    justify-content: center;
+
+  }
+
+}
+
+.slider__feature-price {
+  font-size: rem(36px);
+  line-height: rem(60px);
+  text-transform: uppercase;
+  color: #151515;
+
+}

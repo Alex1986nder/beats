@@ -1,0 +1,81 @@
+//дропдаун
+
+.dropdown {
+  display: inline-flex;
+  position: relative;
+  align-self: flex-start;
+  left: rem(523px);
+
+  &:hover .dropdown__menu {
+    opacity: 1;
+    left: 100%;
+    display: block;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+}
+
+.dropdown__box {
+  display: flex;
+}
+
+.dropdown__menu {
+  position: absolute;
+  padding: 28px 34px;
+  color: #000000;
+  background: #F2F5F5;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  width: rem(273px);
+  transition: opacity 1s;
+  display: flex;
+  left: -9999px;
+  opacity: 0;
+  
+
+}
+
+.dropdown__gear {
+  background: #9A9A9A;
+  width: rem(91px);
+  height: rem(91px);
+  display: block;
+  border-radius: 4px;
+  margin-bottom: rem(25px);
+  display: flex;
+  padding: rem(25px);
+
+
+}
+
+.dropdown__list {
+  gap: rem(28px);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.dropdown__item {
+  display: flex;
+  gap: rem(15px);
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.dropdown__icon {
+
+  width: rem(24px);
+  height: rem(24px);
+  fill: #000000;
+
+}
+
+.dropdown__desc {
+  flex: 1;
+  text-align: end;
+
+}

@@ -49,12 +49,13 @@ $tel: 480px;
   width: $width;
   height: $height;
 }
-
-
+@import "dropdown.scss";
+@import "menu_full-screen.scss";
 @import "base.scss";
 @import "button.scss";
 @import "gamburger.scss";
 @import "contacts.scss";
+@import "slider.scss";
 @import "features.scss";
 @import "form.scss";
 @import "header.scss";
@@ -65,6 +66,7 @@ $tel: 480px;
 @import "socials.scss";
 @import "map.scss";
 @import "footer.scss";
+
 
 
   

@@ -1,5 +1,13 @@
 .reviews {
   background-color: #FFFFFF;
+  position: relative;
+
+  &::before {
+    content: url(../img/icon//квадрат.png);
+    position: absolute;
+    top: -1.125rem;
+    right: 10%;
+  }
 }
 
 .reviews__head {
@@ -19,6 +27,7 @@
 }
 
 .reviews__block {
+
   @include flex_column;
   align-items: center;
   position: relative;
@@ -39,12 +48,13 @@
 }
 
 .reviews__item {
+  
   @include flex;
   column-gap: 2.5rem;
   margin-bottom: rem(16px);
   padding: 2.5rem;
   background-color: #F8FAF9;
-  
+
 
   @include tablet {
     flex-direction: column;
@@ -56,7 +66,7 @@
   }
 
   @include tel {
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
   }
 
 }
@@ -122,27 +132,27 @@
 
   @include tablet {
     font-weight: 400;
-    
+
   }
 }
 
 .reviews__list {
   @include flex;
-  column-gap: 5px;
+  column-gap: rem(5px);
 
   @include tablet {
-    gap: 4px;
+    gap: rem(4px);
   }
-  
+
   @include tel {
-    gap: 10px;
+    gap: rem(10px);
   }
 }
 
 .reviews__icon {
   border-radius: 50%;
   // border: 6px solid transparent;
-  
+
   width: rem(74px);
   height: rem(74px);
   box-sizing: content-box;
@@ -154,16 +164,15 @@
 
   &:hover {
     // border: 6px solid #E01F3D;
-    outline: 6px solid #E01F3D;
-    outline-offset: -6px;
+    outline: rem(6px) solid #E01F3D;
+    outline-offset: rem(-6px);
 
   }
 
   &--active {
     // border-color: #E01F3D;
-    outline-offset: -6px;
+    outline-offset: rem(-6px);
     outline: 6px solid #E01F3D;
   }
 
 }
-
