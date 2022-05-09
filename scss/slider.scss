@@ -95,7 +95,7 @@ b {
   }
 
   @include tel {
-    margin-bottom: 35px;
+    margin-bottom: rem(35px);
   }
   
 
@@ -133,7 +133,7 @@ b {
 
   @include tel {
     max-width: rem(412px);
-    margin-bottom: 27px;
+    margin-bottom: rem(27px);
   }
 
 }
@@ -145,7 +145,7 @@ b {
 
 
   @include tablet {
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
   }
 
 
@@ -172,7 +172,7 @@ b {
   }
 
   @include tel {
-    gap: 21px;
+    gap: rem(21px);
 
   }
   
@@ -187,12 +187,12 @@ b {
 
 
   @include tablet {
-    font-size: 40px;
+    font-size: rem(40px);
 
   }
 
   @include tel {
-    font-size: 32px;
+    font-size: rem(32px);
 
   }
   

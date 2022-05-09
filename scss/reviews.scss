@@ -22,6 +22,7 @@
   @include tel {
     font-size: 2rem;
     margin-bottom: rem(39px);
+
   }
 
 }
@@ -94,7 +95,6 @@
 
 }
 
-
 .reviews__head-review {
 
   margin-bottom: 1.69rem;
@@ -151,7 +151,6 @@
 
 .reviews__icon {
   border-radius: 50%;
-  // border: 6px solid transparent;
 
   width: rem(74px);
   height: rem(74px);
@@ -163,14 +162,12 @@
   }
 
   &:hover {
-    // border: 6px solid #E01F3D;
     outline: rem(6px) solid #E01F3D;
     outline-offset: rem(-6px);
 
   }
 
   &--active {
-    // border-color: #E01F3D;
     outline-offset: rem(-6px);
     outline: 6px solid #E01F3D;
   }
