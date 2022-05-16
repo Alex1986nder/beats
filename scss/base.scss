@@ -11,7 +11,7 @@ html,
 body {
   height: 100%;
   @include indents;
-  
+
 }
 
 body {
@@ -85,7 +85,8 @@ ul li {
 
 .img {
   max-width: 100%;
-
+  height: auto;
+  display: block;
 }
 
 .container {
@@ -93,5 +94,6 @@ ul li {
   margin: 0 auto;
   width: 95%;
   position: relative;
+ 
 
 }

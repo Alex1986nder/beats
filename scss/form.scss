@@ -2,6 +2,7 @@
 
 .form {
   background-color: #181818;
+  position: relative;
 
 }
 
@@ -76,6 +77,8 @@
   border: 3px solid transparent;
   width: 100%;
 
+  
+
   @include tablet {
     padding: 0.5rem 0.63rem;
 
@@ -110,7 +113,7 @@
 .form__comments {
   resize: none;
   color: #000;
-  padding: 1.13px 0.13rem;
+  padding: 1.13rem 0.75rem;
   display: flex;
   width: 100%;
   height: rem(152px);
@@ -118,6 +121,7 @@
   border: 3px solid transparent;
   outline: none;
   margin-bottom: rem(28px);
+  font-size:0.88rem;
 
   @include tablet {
     min-height: rem(82px);
@@ -209,3 +213,13 @@
   }
  
 }
+
+.form__btn {
+  cursor: pointer;
+}
+
+.error {
+  background-color: #E01F3D;
+}
+
+

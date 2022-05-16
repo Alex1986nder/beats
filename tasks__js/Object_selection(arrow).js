@@ -8,7 +8,7 @@ const workers = [
 
 let getWorthyWorkers = () =>
   workers
-  .filter(workers => workers.salary > 1000)
+  .filter(workers => workers.salary < 100)
 
   .map(workers => workers.name);
 
