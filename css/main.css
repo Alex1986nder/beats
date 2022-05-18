@@ -443,6 +443,14 @@ ul li {
 .color-menu__item--active .color-menu__desc {
   opacity: 1;
 }
+@media (max-width: 480px) {
+  .color-menu__item--active {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    z-index: 5;
+  }
+}
 
 .color-menu__link {
   position: relative;
