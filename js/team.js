@@ -15,7 +15,7 @@ function closeItem(button) {
     button.classList.remove('team__link--active');
 }
 
-teamList.addEventListener('click', function (e) {
+teamList.addEventListener('click', (e) => {
     e.preventDefault();
     const target = e.target;
     const activeItem = document.querySelector('.team__link--active');
@@ -30,3 +30,13 @@ teamList.addEventListener('click', function (e) {
         }
     }
 })
+
+window.addEventListener("resize", () => {
+    // находим кнопку открытого элемента
+    const activeLink = document.querySelector(".team__link--active");
+    // если она есть
+    if (activeLink) {
+      // то закрываем этот элемент
+      closeItem(activeLink);
+    }
+});

@@ -32,15 +32,18 @@
 
 }
 
-.reviews__list-box {}
+.reviews__list-box {
+  height: 100%;
+}
 
 
 .reviews__list-reviews {
-  // position: relative;
+  position: relative;
   display: flex;
   flex: 1;
   margin-bottom: rem(16px);
   min-height: rem(351px);
+  height: 100%;
 
   @include tablet {
     margin-bottom: 110px;
@@ -97,23 +100,23 @@
   // height: 100%;
   // left: 0;
   // top: 0;
+  
   padding: 2.5rem;
 
   @include tablet {
-    padding: 2.5rem;
-
+    padding-top: 2.5rem;
+    padding-bottom: 0;
   }
-
-
 
 }
 
 .reviews__desc {
   padding-top: rem(32px);
   flex: 1;
+  padding-bottom: rem(28px);
 
   @include tablet {
-    margin-bottom: rem(28px);
+    padding-bottom: rem(28px);
     padding-top: rem(36px);
   }
 

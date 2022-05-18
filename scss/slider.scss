@@ -1,6 +1,6 @@
 .slider {
   background-color: $Whitesmoke;
- 
+// position: relative;
 }
 
 .slider__container {
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 
 }
 
@@ -36,8 +36,8 @@ b {
     box-shadow: none;
     height: 100%;
     justify-content: center;
-  align-items: center;
-  display: flex;
+    align-items: center;
+    display: flex;
 
   }
 
@@ -64,12 +64,12 @@ b {
   height: 100%;
   align-items: flex-end;
   flex-direction: column;
-  
+
 
   &--background {
-  // flex: 1;
+    // flex: 1;
     background: url(../img/pic/Ellipse__red.png) left top 50%/ 50% auto no-repeat;
-// display: none;
+    // display: none;
   }
 
   @include tablet {
@@ -78,21 +78,42 @@ b {
   }
 }
 
-
-
-.slider__switch--left {
-  transform: rotate(180deg);
-  // left: -4%;
-  // position: absolute;
-
+.slider__switch {
+  
   @include tablet {
-    left: 0;
-
+    position: absolute;
+    top: 29%;
+    z-index: 3;
   }
 
   @include tel {
-    left: 0;
+    
+  }
+}
 
+.slider__switch--right {
+  
+  @include tablet {
+    right: 18%;
+  }
+
+  @include tel {
+    right: -3px;
+    top: rem(185px);
+  }
+}
+
+.slider__switch--left {
+  transform: rotate(180deg);
+ 
+  @include tablet {
+    
+    left: 18%;
+  }
+
+  @include tel {
+    left: -7px;
+  top: rem(182px); 
   }
 
 }
@@ -126,7 +147,7 @@ b {
 
     }
 
-    &--background::before  {
+    &--background::before {
       background: url(../img/pic/Ellipse_minired.png) center center / contain no-repeat;
     }
 
