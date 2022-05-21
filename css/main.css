@@ -738,7 +738,6 @@ ul li {
 }
 
 .slider__container {
-  height: 100%;
   position: relative;
   max-width: 950px;
   margin: 0 auto;
@@ -833,10 +832,14 @@ b {
   }
 }
 
+.sliders .bx-viewport {
+  height: auto !important;
+}
+
 @media (max-width: 768px) {
   .slider__switch {
     position: absolute;
-    top: 29%;
+    top: 22%;
     z-index: 3;
   }
 }
@@ -847,8 +850,8 @@ b {
 }
 @media (max-width: 480px) {
   .slider__switch--right {
-    right: -3px;
-    top: 11.5625rem;
+    right: -10px;
+    top: 9.5rem;
   }
 }
 
@@ -864,7 +867,7 @@ b {
 @media (max-width: 480px) {
   .slider__switch--left {
     left: -7px;
-    top: 11.375rem;
+    top: 9.5rem;
   }
 }
 

@@ -4,7 +4,7 @@
 }
 
 .slider__container {
-  height: 100%;
+  // height: 100%;
   position: relative;
   max-width: 950px;
   margin: 0 auto;
@@ -78,11 +78,15 @@ b {
   }
 }
 
+.sliders .bx-viewport {
+  height: auto !important; 
+} 
+
 .slider__switch {
   
   @include tablet {
     position: absolute;
-    top: 29%;
+    top: 22%;
     z-index: 3;
   }
 
@@ -98,8 +102,8 @@ b {
   }
 
   @include tel {
-    right: -3px;
-    top: rem(185px);
+    right: -10px;
+    top: rem(152px);
   }
 }
 
@@ -113,7 +117,7 @@ b {
 
   @include tel {
     left: -7px;
-  top: rem(182px); 
+  top: rem(152px); 
   }
 
 }
