@@ -1,0 +1,72 @@
+// навигация
+
+.nav-menu {
+  display: flex;
+  position: fixed;
+  top: 27%;
+  right: 3%;
+  z-index: 100;
+
+  @include tablet {
+    display: none;
+
+  }
+
+  @include tel {
+    display: none;
+  }
+
+  &--color {
+    .nav-menu__item {
+      &--activ {
+        .nav-menu__link {
+          border-color: green;
+          &::before {
+            background-color: yellow;
+          }
+        }
+      }
+    }
+    .nav-menu__link {
+      &::before {
+        background-color: green;
+      }
+    }
+  }
+
+ 
+
+}
+
+.nav-menu__item {
+  margin: 0.5rem;
+
+  &--activ {
+    .nav-menu__link {
+      border-color: $red;
+
+      &::before {
+        content: '';
+        background-color: $red;
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+.nav-menu__link {
+  @include circle_activ;
+  display: flex;
+
+  &::before {
+    content: '';
+    @include circle_activ (4px, 4px);
+    background-color: #292929;
+    display: flex;
+    opacity: 60%;
+    margin: auto;
+  }
+  
+ 
+}

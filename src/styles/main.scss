@@ -1,0 +1,86 @@
+
+$Whitesmoke: #F5F5F5;
+$black: #292929;
+$red: #E01F3D;
+$gray:#666666;
+
+//breakpoints
+
+$tablet: 768px;
+$tel: 480px;
+
+@import "blocks/media.scss";
+
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin indents {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin font_head {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin features__item {
+  background-color: #F2F5F4;
+  border-radius: 50%;
+}
+
+@mixin circle_activ ($width: 17px, $height: 17px) {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: $width;
+  height: $height;
+}
+@import "blocks/dropdown.scss";
+@import "blocks/menu_full-screen.scss";
+@import "blocks/base.scss";
+@import "blocks/button.scss";
+@import "blocks/gamburger.scss";
+@import "blocks/contacts.scss";
+@import "blocks/color-menu.scss";
+@import "blocks/team.scss";
+@import "blocks/slider.scss";
+@import "blocks/features.scss";
+@import "blocks/overlay.scss";
+@import "blocks/form.scss";
+@import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/nav.scss";
+@import "blocks/preview.scss";
+@import "blocks/reviews.scss";
+@import "blocks/video.scss";
+
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials.scss";
+
+
+
+  
+
+
+
+
+
+
+
+
+

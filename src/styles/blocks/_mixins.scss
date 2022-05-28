@@ -1,0 +1,38 @@
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin indents {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin font_head {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin features__item {
+  background-color: #F2F5F4;
+  border-radius: 50%;
+}
+
+@mixin circle_activ ($width: 17px, $height: 17px) {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: $width;
+  height: $height;
+}
