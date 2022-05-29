@@ -669,7 +669,7 @@ img {
 }
 
 .color-menu {
-  background: url(../img/pic/Slider.png) center center/cover no-repeat;
+  background: url(img/pic/Slider.png) center center/cover no-repeat;
   position: relative;
   display: flex;
 }
@@ -755,7 +755,7 @@ img {
   position: relative;
 }
 .team::before {
-  content: url(../img/icon//квадрат.png);
+  content: url(img/icon//квадрат.png);
   position: absolute;
   top: -1.125rem;
   right: 10%;
@@ -886,14 +886,14 @@ img {
   content: "";
   width: 0.5625rem;
   height: 0.5625rem;
-  background: url(../img/icon/team_tr_down.png) center center no-repeat;
+  background: url(img/icon/team_tr_down.png) center center no-repeat;
   display: block;
 }
 .team__link--active::after {
   content: "";
   width: 0.5625rem;
   height: 0.5625rem;
-  background: url(../img/icon/team_tr_up.png) center bottom no-repeat;
+  background: url(img/icon/team_tr_up.png) center bottom no-repeat;
   display: flex;
 }
 @media (max-width: 768px) {
@@ -979,7 +979,7 @@ b {
 
 .slider__item {
   display: flex;
-  background: url(../img/pic/Ellipse__slider.png) left top 50%/50% auto no-repeat;
+  background: url(img/pic/Ellipse__slider.png) left top 50%/50% auto no-repeat;
   background-size: 47%;
   justify-content: center;
   width: 950px;
@@ -988,7 +988,7 @@ b {
   flex-direction: column;
 }
 .slider__item--background {
-  background: url(../img/pic/Ellipse__red.png) left top 50%/50% auto no-repeat;
+  background: url(img/pic/Ellipse__red.png) left top 50%/50% auto no-repeat;
 }
 @media (max-width: 768px) {
   .slider__item {
@@ -1057,10 +1057,10 @@ b {
     margin-bottom: 1.9375rem;
     width: 20.1875rem;
     height: 20.1875rem;
-    background: url(../img/pic/Ellipse__slider.png) center center/contain no-repeat;
+    background: url(img/pic/Ellipse__slider.png) center center/contain no-repeat;
   }
   .slider__block--background::before {
-    background: url(../img/pic/Ellipse_minired.png) center center/contain no-repeat;
+    background: url(img/pic/Ellipse_minired.png) center center/contain no-repeat;
   }
 }
 @media (max-width: 480px) {
@@ -1169,13 +1169,13 @@ b {
   }
 }
 .features::before {
-  content: url(../img/icon/треугольник.png);
+  content: url(img/icon/треугольник.png);
   position: absolute;
   bottom: -1.125rem;
   left: 10%;
 }
 .features::after {
-  content: url(../img/icon/наклонная.png);
+  content: url(img/icon/наклонная.png);
   position: absolute;
   top: -1.125rem;
   right: 10%;
@@ -1548,7 +1548,7 @@ body.locked {
   margin-bottom: 2.88rem;
 }
 .form__checkbox:checked ~ .form__check {
-  background: url(../img/icon/галочка.png) center center no-repeat, #FFFFFF;
+  background: url(img/icon/галочка.png) center center no-repeat, #FFFFFF;
 }
 
 .form__check {
@@ -1719,7 +1719,7 @@ body.locked {
 }
 
 .preview__container {
-  background: url(../../img/pic/Ellipse.png) center right/50% auto no-repeat;
+  background: url(img/pic/Ellipse.png) center right/50% auto no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1746,7 +1746,7 @@ body.locked {
     margin-bottom: 4rem;
     width: 20.1875rem;
     height: 20.1875rem;
-    background: url(../../img/pic/Ellipse-min.png) center center/contain no-repeat;
+    background: url(img/pic/Ellipse-min.png) center center/contain no-repeat;
   }
 }
 @media (max-width: 480px) {
@@ -2060,13 +2060,13 @@ body.locked {
   position: relative;
 }
 .video::before {
-  content: url(../img/icon/круг.png);
+  content: url(img/icon/круг.png);
   position: absolute;
   top: -1.125rem;
   left: 10%;
 }
 .video::after {
-  content: url(../img/icon/пятиугольник.png);
+  content: url(img/icon/пятиугольник.png);
   position: absolute;
   bottom: -1.875rem;
   right: 10%;
