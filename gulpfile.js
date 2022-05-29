@@ -143,7 +143,7 @@ task(
   "default",
   series(
     "clean",
-    parallel("copy:html", "styles", "copy:img", "copy:video", "copy:js", "scripts"),
+    parallel("copy:html", "styles", "copy:img", "copy:video", "scripts"),
     parallel("watch", "server")
   )
 );
@@ -151,5 +151,5 @@ task(
 task('build',
  series(
    'clean',
-   parallel('copy:html', 'styles', "copy:img", "copy:video", "copy:js", "scripts"))
+   parallel('copy:html', 'styles', "copy:img", "copy:video", "scripts"))
 );

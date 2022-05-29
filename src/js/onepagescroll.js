@@ -1,4 +1,4 @@
-
+(function () {
   const sections = $("section");
   const display = $(".main");
 
@@ -11,7 +11,7 @@
 
   const performTransition = (sectionEq) => {
     if (inScroll === false) {
-      if (body.classList.contains("locked")) {
+      if (document.body.classList.contains("locked")) {
         return;
       }
       inScroll = true;
@@ -113,14 +113,9 @@
 
     $("body").swipe({
       swipe: function (event, direction) {
-        const scroller = vieportScroller();
-        let scrollDirection = "";
-
-        if (direction === "up") scrollDirection = "next";
-        if (direction === "down") scrollDirection = "prev";
-
-        scroller[scrollDirection]();
+        if (direction === "up") scrollViewport("next");
+        if (direction === "down") scrollViewport("prev");
       },
     });
   }
-
+})();

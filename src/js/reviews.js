@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   const commentAvatars = document.querySelector("#reviewsList");
 
   const findReview = (reviewName) => {
@@ -27,4 +27,4 @@
       findReview(reviewId);
     }
   });
-})()
+})();

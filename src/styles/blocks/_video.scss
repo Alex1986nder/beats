@@ -43,10 +43,10 @@
 
 .video__wrapper {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
   max-width: rem(662px);
   width: 100%;
   max-height: rem(392px);
@@ -253,6 +253,7 @@
 .video__control-sound-pic {
   width: 23px;
   padding: 4px;
+  
 }
 
 .video__progress--sound {

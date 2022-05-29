@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   const playBtn = document.querySelector(".video__btn");
   const playerPlayBtn = document.querySelector(".video__control-play");
   const video = document.getElementById("player");
@@ -19,7 +19,7 @@
 
     durationControl.min = 0;
     durationControl.value = 0;
-    durationControl.max = video.duration;
+    durationControl.max = parseInt(video.duration);
     durationControl.addEventListener("input", setVideoDuration);
 
     soundControl.min = 0;
@@ -42,7 +42,7 @@
 
     if (video.paused) {
       video.play();
-      intervalId = setInterval(updateDuration, 2000);
+      intervalId = setInterval(updateDuration, 1000/60);
     } else {
       clearInterval(intervalId);
       video.pause();
@@ -89,4 +89,4 @@
       soundBtn.classList.remove("active");
     }
   }
-})()
+})();

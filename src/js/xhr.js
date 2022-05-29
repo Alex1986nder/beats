@@ -1,4 +1,4 @@
-
+(function () {
   const formWrap = document.querySelector("#formWrap");
   const form__btn = document.querySelector(".form__btn");
   const form = document.querySelector(".section.form");
@@ -56,7 +56,7 @@
   }
 
   function openModal(text) {
-    body.classList.toggle("locked");
+    document.body.classList.toggle("locked");
     const overlay = document.createElement("div");
     overlay.classList.add("form__overlay");
 
@@ -69,7 +69,7 @@
     link.textContent = "закрыть";
 
     link.addEventListener("click", function () {
-      body.classList.toggle("locked");
+      document.body.classList.toggle("locked");
       form.removeChild(overlay);
     });
 
@@ -81,4 +81,4 @@
       document.addEventListener("wheel", prevent, { passive: false });
     }
   }
-
+})();

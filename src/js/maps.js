@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   let myMap;
   const init = () => {
     myMap = new ymaps.Map("map", {
@@ -34,4 +34,4 @@
   };
 
   ymaps.ready(init);
-})()
+})();

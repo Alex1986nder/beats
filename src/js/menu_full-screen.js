@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   const gamburger = document.querySelector(".gamburger");
   const menuFullscreen = document.querySelector(".menu-nav");
   const menuLinks = menuFullscreen.querySelectorAll("a");
@@ -19,4 +19,4 @@
       body.classList.toggle("locked");
     });
   }
-})()
+})();

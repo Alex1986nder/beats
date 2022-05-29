@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   const slider = $(".slider__list").bxSlider({
     controls: false,
     pager: false,
@@ -15,4 +15,4 @@
 
     slider.goToNextSlide();
   });
-})()
+})();

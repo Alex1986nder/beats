@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   const teamList = document.querySelector(".team__list");
 
   function openItem(button) {
@@ -41,4 +41,4 @@
       closeItem(activeLink);
     }
   });
-})()
+})();

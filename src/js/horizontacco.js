@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   const menu = document.querySelector("#colorMenu");
   const items = document.querySelectorAll(".color-menu__item");
 
@@ -66,4 +66,4 @@
       closeMenuColor(activeButton);
     }
   });
-})()
+})();
